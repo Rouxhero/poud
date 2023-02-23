@@ -8,6 +8,9 @@
     <link href="css/style.css" rel="stylesheet">
     <title>Welcome to Poudlard</title>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -20,30 +23,49 @@
         <img src="https://see.fontimg.com/api/renderfont4/ov4z/eyJyIjoiZnMiLCJoIjo3MSwidyI6MTAwMCwiZnMiOjcxLCJmZ2MiOiIjNDM1MzVBIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/V2VsY29tZSB0byBQb3VkbGFyZA/harry-potter.png" alt="Harry Potter fonts">
 
     </div>
+    <div class="w-100 pt-[4rem] pl-4 pr-4 h-[100vh] bg-[#483D8B] flex flex-col items-start">
+        <img src="img/r.png" class="absolute w-[350px] mt-[13rem] ml-1">
+        <img class="z-50" src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjoxMDUsInciOjEwMDAsImZzIjoxMDUsImZnYyI6IiNCOEIyMzIiLCJiZ2MiOiIjRkZGRkZGIiwidCI6MX0/UmVjb21wZW5zZSBkdSBqb3Vy/harry-p.png" alt="Harry Potter fonts">
+        <img class="z-50 ml-24 mt-4 mb-[-3rem] w-[150px]" src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo1OSwidyI6MTAwMCwiZnMiOjU5LCJmZ2MiOiIjOEY4QTIyIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/U2VtYWluZSAw/harry-p.png">
+        <div class="z-50 w-100 mt-16 h-[80vh] pl-1 pr-1 flex flex-wrap justify-center content-around ">
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#CD853F] hover:bg-[#BDB76B]" onclick="set_modal('j1s0')">
+                <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciAxIA/harry-p.png">
+            </div>
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#CD853F] hover:bg-[#BDB76B]" onclick="set_modal('j2s0')">
+                <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciAy/harry-p.png">
+            </div>
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#CD853F] hover:bg-[#BDB76B]" onclick="set_modal('j3s0')">
+                <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciAz/harry-p.png">
+            </div>
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#CD853F] hover:bg-[#BDB76B]" onclick="set_modal('j4s0')">
+                <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciA0/harry-p.png">
+            </div>
+        </div>
+    </div>
     <div class="w-100 pt-[4rem] pl-4 pr-4 h-[100vh] bg-[#8FBC8F] flex flex-col items-start">
         <img src="img/s.png" class="absolute w-[350px] mt-[13rem] ml-1">
         <img class="z-50" src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjoxNTEsInciOjEwMDAsImZzIjoxNTEsImZnYyI6IiM0MzUzNUEiLCJiZ2MiOiIjRkZGRkZGIiwidCI6MX0/UmVjb21wZW5zZSBkdSBqb3Vy/harry-p.png" alt="Harry Potter fonts">
         <img class="z-50 ml-24 mt-4 mb-[-3rem] w-[150px]" src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjN0I3ODQyIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/U2VtYWluZSAx/harry-p.png">
         <div class="z-50 w-100 mt-16 h-[80vh] pl-1 pr-1 flex flex-wrap justify-center content-around ">
-            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#696969] hover:bg-[#BDB76B]">
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#696969] hover:bg-[#BDB76B]" onclick="set_modal('j1s1')">
                 <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciAxIA/harry-p.png">
             </div>
-            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#696969] hover:bg-[#BDB76B]">
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#696969] hover:bg-[#BDB76B]" onclick="set_modal('j2s1')">
                 <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciAy/harry-p.png">
             </div>
-            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#696969] hover:bg-[#BDB76B]">
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#696969] hover:bg-[#BDB76B]" onclick="set_modal('j3s1')">
                 <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciAz/harry-p.png">
             </div>
-            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#696969] hover:bg-[#BDB76B]">
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#696969] hover:bg-[#BDB76B]" onclick="set_modal('j4s1')">
                 <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciA0/harry-p.png">
             </div>
-            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#696969] hover:bg-[#BDB76B]">
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#696969] hover:bg-[#BDB76B]" onclick="set_modal('j5s1')">
                 <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciA1/harry-p.png">
             </div>
-            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#696969] hover:bg-[#BDB76B]">
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#696969] hover:bg-[#BDB76B]" onclick="set_modal('j6s1')">
                 <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciA2/harry-p.png">
             </div>
-            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#696969] hover:bg-[#BDB76B]">
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#696969] hover:bg-[#BDB76B]" onclick="set_modal('j7s1')">
                 <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciA3/harry-p.png">
             </div>
         </div>
@@ -53,26 +75,52 @@
         <img class="z-50" src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjoxMDEsInciOjEwMDAsImZzIjoxMDEsImZnYyI6IiNCNkIxNTciLCJiZ2MiOiIjRkZGRkZGIiwidCI6MX0/UmVjb21wZW5zZSBkdSBqb3Vy/harry-p.png" alt="Harry Potter fonts">
         <img class="z-50 ml-24 mt-4 mb-[-3rem] w-[150px]" src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjN0I3ODQyIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/U2VtYWluZSAx/harry-p.png">
         <div class="z-50 w-100 mt-16 h-[80vh] pl-1 pr-1 flex flex-wrap justify-center content-around ">
-            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#B8860B] hover:bg-[#BDB76B]">
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#B8860B] hover:bg-[#BDB76B]" onclick="set_modal('j1s2')">
                 <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciAxIA/harry-p.png">
             </div>
-            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#B8860B] hover:bg-[#BDB76B]">
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#B8860B] hover:bg-[#BDB76B]" onclick="set_modal('j2s2')">
                 <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciAy/harry-p.png">
             </div>
-            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#B8860B] hover:bg-[#BDB76B]">
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#B8860B] hover:bg-[#BDB76B]" onclick="set_modal('j3s2')">
                 <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciAz/harry-p.png">
             </div>
-            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#B8860B] hover:bg-[#BDB76B]">
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#B8860B] hover:bg-[#BDB76B]" onclick="set_modal('j4s2')">
                 <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciA0/harry-p.png">
             </div>
-            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#B8860B] hover:bg-[#BDB76B]">
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#B8860B] hover:bg-[#BDB76B]" onclick="set_modal('j5s2')">
                 <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciA1/harry-p.png">
             </div>
-            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#B8860B] hover:bg-[#BDB76B]">
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#B8860B] hover:bg-[#BDB76B]" onclick="set_modal('j6s2')">
                 <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciA2/harry-p.png">
             </div>
-            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#B8860B] hover:bg-[#BDB76B]">
+            <div class="z-50 ml-4 w-24 h-24 rounded-lg border-2 flex justify-center items-center pl-1 pr-1 bg-[#B8860B] hover:bg-[#BDB76B]" onclick="set_modal('j7s2')">
                 <img src="https://see.fontimg.com/api/renderfont4/MVZ6w/eyJyIjoiZnMiLCJoIjo0OCwidyI6MTAwMCwiZnMiOjQ4LCJmZ2MiOiIjRjhGM0IzIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm91ciA3/harry-p.png">
+            </div>
+        </div>
+    </div>
+    <div class="relative z-[99] hidden" id="modal" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                    <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                        <div class="sm:flex sm:items-start">
+                            <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full sm:mx-0 sm:h-10 sm:w-10">
+                                <img src="img/logo.svg">
+                            </div>
+                            <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                                <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title"></h3>
+                                <div class="mt-2">
+                                    <p class="text-sm text-gray-500" id="modal-body"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                        <button type="button" class="inline-flex w-full justify-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"
+                            onclick="closeModal()">Super !</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
