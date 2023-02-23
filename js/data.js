@@ -22,7 +22,14 @@ const jour2s1 = {
     "title": "Encore un cadeau !",
     "description": "Pour ce 2nd cadeau, on reste dans ce theme, mais au tours du poignet cette fois !"
 }
-
+const jour3s1 = {
+    "title": "On attend a nouveau !",
+    "description": "Et oui, on attend a nouveau pour se voir ! Pour attendre, il va falloir deviner les cadeaux de la semaine prochaine<br><i>Indice : </i><b>Ils sont 3</b>"
+}
+const jour4s1 = {
+    "title": "On attend encore !",
+    "description": "Il va falloir encore attendre  ! Pour attendre, il va falloir deviner les cadeaux de la semaine prochaine<br><i>Indice : </i><b>Ils sont 3</b>"
+}
 
 
 
