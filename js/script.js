@@ -25,9 +25,11 @@ function check_date(key) {
     ) {
         return true
     }
+
     keyD = parseInt(key[1])
     keyS = parseInt(key[3]) - 1
-    dayK = keyD + keyS * 7
+    dayK = (keyD + keyS * 7) - 2
+    console.log(day, month, key, dayK)
     if (day >= dayK && month >= 3) {
         return true
     }
