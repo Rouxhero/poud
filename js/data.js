@@ -28,7 +28,7 @@ const jour3s1 = {
 }
 const jour4s1 = {
     "title": "On attend encore !",
-    "description": "Il va falloir encore attendre  ! Encore un indice hehe. <br><i>Indice : </i><b>Tu l'auras autours du coups</b>"
+    "description": "Il va falloir encore attendre  ! Encore un indice hehe. <br><i>Indice : </i><b>Tu l'auras autours du cou</b>"
 }
 const jour5s1 = {
     "title": "On attend toujours !",
